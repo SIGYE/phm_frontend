@@ -1,6 +1,7 @@
 import React from 'react'
 import  { useState } from 'react';
 import Layout from '../../components/Layout';
+import nav from '../../assets/nav.jpg';
 
 const pillarsData = [
   {
@@ -47,7 +48,7 @@ const AboutUs = () => {
     <Layout>
            <section className="relative h-[50vh] w-full">
         <img
-          src="/src/assets/nav.jpg" 
+          src={nav} 
           alt="Church background"
           className="absolute inset-0 w-full h-full object-cover"
         />

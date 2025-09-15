@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import { FiLogIn } from "react-icons/fi";
+import logo from '../assets/phm_logo.png';
 
 const Navbar = () => {
   const location = useLocation();
@@ -52,7 +53,7 @@ const Navbar = () => {
         {/* Logo */}
         <div className="flex-shrink-0">
           <img
-            src="/src/assets/phm_logo.png"
+            src={logo}
             alt="Logo"
             className="h-14 w-14 rounded-full bg-white p-1 shadow-md"
           />

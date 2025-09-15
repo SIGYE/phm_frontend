@@ -4,49 +4,61 @@ import { FiLogIn } from "react-icons/fi";
 import { NavLink } from "react-router-dom"; 
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import church1 from '../assets/church1.jpg';
+import church2 from '../assets/church2.jpg';
+import church3 from '../assets/church3.jpg';
+import church4 from '../assets/church4.jpg';
+import church5 from '../assets/church5.jpg';
+import church6 from '../assets/church6.jpg';
+import church7 from '../assets/church7.jpg';
+import JimmySandra from '../assets/JimmySandra.png';
+import sermon1 from '../assets/sermon1.jpg';
+import sermon2 from '../assets/sermon2.jpg';
+import sermon3 from '../assets/sermon3.jpg';
+
 
 export default function HomeScreen() {
 
      const slides = [
     {
-      image: "/src/assets/church1.jpg",
+      image: church1,
       title: "Encounter God. Embrace Community.",
       subtitle:
         "“Seeing broken lives restored, transformed and shaped to fulfill God’s Purposes.”",
       verse: "Jeremiah 18:1-6",
     },
     {
-      image: "/src/assets/church2.jpg",
+      image: church2,
   title: "Encounter God. Embrace Community.",
       subtitle:
         "“Seeing broken lives restored, transformed and shaped to fulfill God’s Purposes.”",
       verse: "Jeremiah 18:1-6",    },
     {
-      image: "/src/assets/church3.jpg",
+      image: church3,
       title: "Encounter God. Embrace Community.",
       subtitle:
         "“Seeing broken lives restored, transformed and shaped to fulfill God’s Purposes.”",
       verse: "Jeremiah 18:1-6",    },
        {
-      image: "/src/assets/church4.jpg",
+      image: church4,
       title: "Encounter God. Embrace Community.",
       subtitle:
         "“Seeing broken lives restored, transformed and shaped to fulfill God’s Purposes.”",
       verse: "Jeremiah 18:1-6",    },
        {
-      image: "/src/assets/church5.jpg",
+      image: church5,
      title: "Encounter God. Embrace Community.",
       subtitle:
         "“Seeing broken lives restored, transformed and shaped to fulfill God’s Purposes.”",
       verse: "Jeremiah 18:1-6",    },
        {
-      image: "/src/assets/church6.jpg",
+      image: church6,
        title: "Encounter God. Embrace Community.",
       subtitle:
         "“Seeing broken lives restored, transformed and shaped to fulfill God’s Purposes.”",
       verse: "Jeremiah 18:1-6",    },
        {
-      image: "/src/assets/church7.jpg",
+      image: church7,
        title: "Encounter God. Embrace Community.",
       subtitle:
         "“Seeing broken lives restored, transformed and shaped to fulfill God’s Purposes.”",
@@ -118,7 +130,6 @@ useEffect(() => {
         <div className="w-full">
     <Navbar />
 <section className="relative h-[90vh] overflow-hidden">
-    {/* Slides wrapper */}
     <div className="absolute inset-0">
       {slides.map((slide, index) => (
         <div
@@ -156,7 +167,6 @@ useEffect(() => {
       </div>
     </div>
 
-    {/* Progress Bar */}
 <div className="absolute bottom-4 left-0 right-0 px-8 z-20">
   <div className="w-full h-1 bg-white/30 rounded-full overflow-hidden">
     <div
@@ -168,7 +178,6 @@ useEffect(() => {
   </div>
 </div>
 
-    {/* Arrows Navigation (optional if you want to keep them) */}
     <div className="absolute bottom-6 right-6 flex space-x-2 z-20">
       <button
         onClick={() =>
@@ -196,7 +205,7 @@ useEffect(() => {
             {/*Senior Pastor Section*/}
             <section className="max-w-6xl mx-auto px-6 md:px-12 py-16 grid md:grid-cols-2 gap-10 items-center">
                 <div className="flex justify-center">
-                    <img src="/src/assets/JimmySandra.png" alt="Pastor Jimmy & Sandra" className="rounded-xl shadow-lg"/>
+                    <img src={JimmySandra} alt="Pastor Jimmy & Sandra" className="rounded-xl shadow-lg"/>
                 </div>
                 <div>
                     <h4 className="text-gray-500 uppercase tracking-wide font-semibold ">Meet our Senior Pastor</h4>
@@ -475,7 +484,7 @@ useEffect(() => {
                 <div className="w-16 h-1 bg-secondary-500 mx-auto mb-10"></div>
                 <div className="grid md:grid-cols-3 gap-8">
                     <div className="relative rounded-lg overflow-hidden shadow-lg group">
-                        <img src="/src/assets/sermon1.jpg" alt="Sermon 1" className="w-full h-64 object-cover group-hover:scale-105 transition duration-500"/>
+                        <img src={sermon1} alt="Sermon 1" className="w-full h-64 object-cover group-hover:scale-105 transition duration-500"/>
                         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
                         <div className="absolute bottom-4 left-4 text-left text-white">
                             <p className="text-sm mb-1">5<sup>th</sup>June 2025</p>
@@ -485,7 +494,7 @@ useEffect(() => {
                     </div>
 
                          <div className="relative rounded-lg overflow-hidden shadow-lg group">
-                        <img src="/src/assets/sermon2.jpg" alt="Sermon 2" className="w-full h-64 object-cover group-hover:scale-105 transition duration-500"/>
+                        <img src={sermon2} alt="Sermon 2" className="w-full h-64 object-cover group-hover:scale-105 transition duration-500"/>
                         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
                         <div className="absolute bottom-4 left-4 text-left text-white">
                             <p className="text-sm mb-1">5<sup>th</sup>June 2025</p>
@@ -495,7 +504,7 @@ useEffect(() => {
                     </div>
 
                          <div className="relative rounded-lg overflow-hidden shadow-lg group">
-                        <img src="/src/assets/sermon3.jpg" alt="Sermon 3" className="w-full h-64 object-cover group-hover:scale-105 transition duration-500"/>
+                        <img src={sermon3} alt="Sermon 3" className="w-full h-64 object-cover group-hover:scale-105 transition duration-500"/>
                         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
                         <div className="absolute bottom-4 left-4 text-left text-white">
                             <p className="text-sm mb-1">5<sup>th</sup>June 2025</p>

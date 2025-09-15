@@ -1,69 +1,73 @@
 import React from 'react'
 import Layout from '../components/Layout';
 import Navbar from '../components/Navbar';
+import nav from '../assets/nav.jpg';
+import sermon1 from '../assets/sermon1.jpg';
+import sermon2 from '../assets/sermon2.jpg';
+import sermon3 from '../assets/sermon3.jpg';
 
 const sermons = [
     {
         id: 1,
         title: "The Power of Faith",
         date: "5th June 2025",
-        image: "/src/assets/sermon1.jpg",
+        image: sermon1,
         link: "#",
     },
     {
         id: 2,
         title: "What's Life after Death?",
         date: "5th June 2025",
-        image: "/src/assets/sermon2.jpg",
+        image: sermon2,
         link: "#",
     },
     {
         id: 3,
         title: "Jesus Came to bring Joy",
         date: "5th June 2025",
-        image: "/src/assets/sermon3.jpg",
+        image: sermon3,
         link: "#",
     },
        {
         id: 4,
         title: "The Power of Faith",
         date: "5th June 2025",
-        image: "/src/assets/sermon1.jpg",
+        image: sermon1,
         link: "#",
     },
        {
         id: 5,
         title: "What's Life after Death",
         date: "5th June 2025",
-        image: "/src/assets/sermon2.jpg",
+        image: sermon2,
         link: "#",
     },
        {
         id: 6,
         title: "Jesus Came to bring Joy",
         date: "5th June 2025",
-        image: "/src/assets/sermon3.jpg",
+        image: sermon3,
         link: "#",
     },
        {
         id: 7,
         title: "The Power of Faith",
         date: "5th June 2025",
-        image: "/src/assets/sermon1.jpg",
+        image: sermon1,
         link: "#",
     },
     {
         id: 8,
         title: "What's Life after Death?",
         date: "5th June 2025",
-        image: "/src/assets/sermon2.jpg",
+        image: sermon2,
         link: "#",
     },
     {
         id: 9,
         title: "Jesus Came to bring Joy",
         date: "5th June 2025",
-        image: "/src/assets/sermon3.jpg",
+        image: sermon3,
         link: "#",
     }
 ];
@@ -73,7 +77,7 @@ const Sermons = () => {
     <Layout>
        <section className="relative h-[50vh] w-full">
         <img
-          src="/src/assets/nav.jpg" 
+          src={nav} 
           alt="Church background"
           className="absolute inset-0 w-full h-full object-cover"
         />
@@ -111,7 +115,7 @@ const Sermons = () => {
           <a
             href="https://www.youtube.com"
             target='_blank'
-            className='text-orange-700 hover:underline font-medium'
+            className='text-primary-500 hover:underline font-medium'
           >
             Visit our Youtube Channel for more
           </a>

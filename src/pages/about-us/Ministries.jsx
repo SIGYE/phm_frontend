@@ -1,6 +1,10 @@
 import React from 'react'
 import Layout from '../../components/Layout';
 import { useState } from "react";
+import nav from '../../assets/nav.jpg';
+import ministry1 from '../../assets/ministry1.jpg';
+import ministry2 from '../../assets/ministry2.jpg';
+import ministry3 from '../../assets/ministry3.jpg';
 
 const ministriesData = [
   {
@@ -59,7 +63,7 @@ const Ministries = () => {
     <Layout>
          <section className="relative h-[50vh] w-full">
         <img
-          src="/src/assets/nav.jpg" 
+          src={nav} 
           alt="Church background"
           className="absolute inset-0 w-full h-full object-cover"
         />
@@ -110,7 +114,7 @@ const Ministries = () => {
 
     <div className="relative group overflow-hidden rounded-lg shadow-lg">
       <img
-        src="/src/assets/ministry1.jpg"
+        src={ministry1}
         alt="Easter Sunday"
         className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
       />
@@ -122,7 +126,7 @@ const Ministries = () => {
 
     <div className="relative group overflow-hidden rounded-lg shadow-lg">
       <img
-        src="/src/assets/ministry2.jpg"
+        src={ministry2}
         alt="Easter Sunday"
         className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
       />
@@ -134,7 +138,7 @@ const Ministries = () => {
 
     <div className="relative group overflow-hidden rounded-lg shadow-lg">
       <img
-        src="/src/assets/ministry3.jpg"
+        src={ministry3}
         alt="Easter Sunday"
         className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
       />

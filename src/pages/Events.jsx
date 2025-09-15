@@ -2,6 +2,10 @@ import React from 'react'
 import Layout from '../components/Layout';
 import { CiLocationOn } from "react-icons/ci";
 import { LuTimer } from "react-icons/lu";
+import nav from '../assets/nav.jpg';
+import event1 from '../assets/event1.jpg';
+import event2 from '../assets/event2.jpg';
+import event3 from '../assets/event3.jpg';
 
 const events = [
     {
@@ -10,7 +14,7 @@ const events = [
         date: "2025-05-30",
         location: "Masaka, Kigali, Rwanda",
         time: "2:00pm - 7:00pm",
-        image: "/src/assets/event1.jpg",
+        image: event1,
         description: "Join us for an inspiring event on the Cost of Following Jesus. Discover the true meaning of discipleship and the sacrifices it entails. Don't miss this transformative experience!",
     },
      {
@@ -19,7 +23,7 @@ const events = [
         date: "2025-05-30",
         location: "Masaka, Kigali, Rwanda",
         time: "2:00pm - 7:00pm",
-        image: "/src/assets/event2.jpg",
+        image: event2,
         description: "Join us for an inspiring event on the Cost of Following Jesus. Discover the true meaning of discipleship and the sacrifices it entails. Don't miss this transformative experience!",
     },
      {
@@ -28,7 +32,7 @@ const events = [
         date: "2025-05-30",
         location: "Masaka, Kigali, Rwanda",
         time: "2:00pm - 7:00pm",
-        image: "/src/assets/event3.jpg",
+        image: event3,
         description: "Join us for an inspiring event on the Cost of Following Jesus. Discover the true meaning of discipleship and the sacrifices it entails. Don't miss this transformative experience!",
     },
 ];
@@ -45,7 +49,7 @@ const Events = () => {
     <Layout>
          <section className="relative h-[50vh] w-full">
         <img
-          src="/src/assets/nav.jpg" 
+          src={nav}
           alt="Church background"
           className="absolute inset-0 w-full h-full object-cover"
         />

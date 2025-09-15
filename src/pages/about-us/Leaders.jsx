@@ -1,5 +1,12 @@
 import React from 'react'
 import Layout from '../../components/Layout'
+import JimmySandra from '../../assets/JimmySandra.png'
+import leader1 from '../../assets/leader1.png'
+import leader2 from '../../assets/leader2.png'
+import leader3 from '../../assets/leader3.png'
+import leader4 from '../../assets/leader4.png'
+import leader5 from '../../assets/leader5.png'
+import nav from '../../assets/nav.jpg';
 
 const leadersData = [
   {
@@ -8,7 +15,7 @@ const leadersData = [
     title: "Sr. Leadership",
     verse: "“...Do all that you have in mind. Go ahead; I am with you heart and soul.” – 1 Samuel 14:6",
     description: "We believe that God has called us to lead and guide His people with love and humility.",
-    image: "/src/assets/JimmySandra.png",
+    image: JimmySandra,
   },
   {
     id: 2,
@@ -16,7 +23,7 @@ const leadersData = [
     title: "Missions & Evangelism",
     description:
       "We strive to obey the great commission (Matthew 28:19–20) by reaching nations with the love and truth of Christ.",
-    image: "/src/assets/leader1.png",
+    image: leader1,
   },
   {
     id: 3,
@@ -24,7 +31,7 @@ const leadersData = [
     title: "Fellowship",
     description:
       "We believe in building God’s family and welcome you to find a home with us.",
-    image: "/src/assets/leader2.png",
+    image: leader2,
   },
 {
     id: 4,
@@ -32,7 +39,7 @@ const leadersData = [
     title: "Fellowship",
     description:
       "We believe in building God’s family and welcome you to find a home with us.",
-    image: "/src/assets/leader3.png",
+    image: leader3,
   },
   {
     id: 5,
@@ -40,7 +47,7 @@ const leadersData = [
     title: "Ministry",
     description:
       "We believe that every believer is called to serve God. Therefore we use our time, talents, and resources to serve God’s people.",
-    image: "/src/assets/leader4.png",
+    image: leader4,
   },
   {
     id: 6,
@@ -48,7 +55,7 @@ const leadersData = [
     title: "Worship",
     description:
       "We believe that worship is how we express our love to God and prepare our hearts to receive His Word.",
-    image: "/src/assets/leader5.png",
+    image: leader5,
   },
 ];
 
@@ -57,7 +64,7 @@ const Leaders = () => {
    <Layout>
     <section className="relative h-[50vh] w-full">
         <img
-          src="/src/assets/nav.jpg"
+          src={nav}
           alt="Connect Group Banner"
           className="absolute inset-0 w-full h-full object-cover"
         />

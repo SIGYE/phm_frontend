@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from '../../components/Layout';
+import connect1 from '../../assets/connect1.png';
 
 const ConnectGroup = () => {
   return (
@@ -22,7 +23,7 @@ const ConnectGroup = () => {
 <section className="max-w-7xl mx-auto px-6 py-12">
   <div className="inline-block">
     <h2 className="text-2xl font-bold text-gray-900">What They Are</h2>
-    <div className="w-16 h-1 bg-yellow-700 mt-1"></div>
+    <div className="w-16 h-1 bg-secondary-500 mt-1"></div>
   </div>
   
   <p className="italic text-gray-600 text-sm mt-6 mb-6">
@@ -41,7 +42,7 @@ const ConnectGroup = () => {
 <section className="max-w-7xl mx-auto px-6 py-12">
   <div className="inline-block mb-6">
     <h2 className="text-xl font-bold text-gray-900">In a Connect Group</h2>
-    <div className="w-16 h-1 bg-yellow-700 mt-1"></div>
+    <div className="w-16 h-1 bg-secondary-500 mt-1"></div>
   </div>
 
   <ul className="space-y-3 text-gray-700 list-disc list-inside">
@@ -58,14 +59,14 @@ const ConnectGroup = () => {
       <section className="max-w-7xl mx-auto px-6 py-12">
         <h2 className="text-2xl font-bold text-center text-gray-900 mb-10">
           Gallery
-          <div className="w-16 h-1 bg-orange-500 mx-auto mt-2 rounded"></div>
+          <div className="w-16 h-1 bg-secondary-500 mx-auto mt-2 rounded"></div>
         </h2>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
           {/* Image 1 */}
           <div className="relative group overflow-hidden rounded-lg shadow-lg">
             <img
-              src="/src/assets/connect1.png"
+              src={connect1}
               alt="Connect Group"
               className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
             />
@@ -74,7 +75,7 @@ const ConnectGroup = () => {
           {/* Image 2 */}
           <div className="relative group overflow-hidden rounded-lg shadow-lg">
             <img
-              src="/src/assets/connect1.png"
+              src={connect1}
               alt="Connect Group"
               className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
             />
@@ -83,7 +84,7 @@ const ConnectGroup = () => {
           {/* Image 3 */}
           <div className="relative group overflow-hidden rounded-lg shadow-lg">
             <img
-              src="/src/assets/connect1.png"
+              src={connect1}
               alt="Connect Group"
               className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
             />
