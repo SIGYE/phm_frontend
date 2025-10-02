@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import { FiLogIn } from "react-icons/fi";
-import logo from '../assets/phm_logo.png';
+import logo from '../assets/logo.png';
 
 const Navbar = () => {
   const location = useLocation();

@@ -22,44 +22,44 @@ export default function HomeScreen() {
      const slides = [
     {
       image: church1,
-      title: "Encounter God. Embrace Community.",
+      title: "Welcome to the Potter's Hand Church.",
       subtitle:
         "“Seeing broken lives restored, transformed and shaped to fulfill God’s Purposes.”",
       verse: "Jeremiah 18:1-6",
     },
     {
       image: church2,
-  title: "Encounter God. Embrace Community.",
+  title: "Welcome to the Potter's Hand Church.",
       subtitle:
         "“Seeing broken lives restored, transformed and shaped to fulfill God’s Purposes.”",
       verse: "Jeremiah 18:1-6",    },
     {
       image: church3,
-      title: "Encounter God. Embrace Community.",
+      title: "Welcome to the Potter's Hand Church",
       subtitle:
         "“Seeing broken lives restored, transformed and shaped to fulfill God’s Purposes.”",
       verse: "Jeremiah 18:1-6",    },
        {
       image: church4,
-      title: "Encounter God. Embrace Community.",
+      title: "Welcome to the Potter's Hand Church",
       subtitle:
         "“Seeing broken lives restored, transformed and shaped to fulfill God’s Purposes.”",
       verse: "Jeremiah 18:1-6",    },
        {
       image: church5,
-     title: "Encounter God. Embrace Community.",
+     title: "Welcome to the Potter's Hand Church",
       subtitle:
         "“Seeing broken lives restored, transformed and shaped to fulfill God’s Purposes.”",
       verse: "Jeremiah 18:1-6",    },
        {
       image: church6,
-       title: "Encounter God. Embrace Community.",
+       title: "Welcome to the Potter's Hand Church",
       subtitle:
         "“Seeing broken lives restored, transformed and shaped to fulfill God’s Purposes.”",
       verse: "Jeremiah 18:1-6",    },
        {
       image: church7,
-       title: "Encounter God. Embrace Community.",
+       title: "Welcome to the Potter's Hand Church",
       subtitle:
         "“Seeing broken lives restored, transformed and shaped to fulfill God’s Purposes.”",
       verse: "Jeremiah 18:1-6",    },
@@ -134,11 +134,16 @@ useEffect(() => {
       {slides.map((slide, index) => (
         <div
           key={index}
-          className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ease-in-out ${
+          className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
             index === currentSlide ? "opacity-100" : "opacity-0"
           }`}
-          style={{ backgroundImage: `url('${slide.image}')` }}
         >
+          <img 
+            src={slide.image} 
+            alt={slide.title}
+            className="w-full h-full object-cover object-center"
+            style={{ minHeight: '100%', minWidth: '100%' }}
+          />
           {/* Overlay */}
           <div className="absolute inset-0 bg-black bg-opacity-50"></div>
         </div>
@@ -167,16 +172,16 @@ useEffect(() => {
       </div>
     </div>
 
-<div className="absolute bottom-4 left-0 right-0 px-8 z-20">
-  <div className="w-full h-1 bg-white/30 rounded-full overflow-hidden">
-    <div
-      className="h-1 bg-primary-500 transition-all duration-500 ease-linear"
-      style={{
-        width: `${((currentSlide + 1) / slides.length) * 100}%`,
-      }}
-    />
-  </div>
-</div>
+    <div className="absolute bottom-4 left-0 right-0 px-8 z-20">
+      <div className="w-full h-1 bg-white/30 rounded-full overflow-hidden">
+        <div
+          className="h-1 bg-primary-500 transition-all duration-500 ease-linear"
+          style={{
+            width: `${((currentSlide + 1) / slides.length) * 100}%`,
+          }}
+        />
+      </div>
+    </div>
 
     <div className="absolute bottom-6 right-6 flex space-x-2 z-20">
       <button
@@ -199,7 +204,6 @@ useEffect(() => {
       </button>
     </div>
   </section>
-
 
 
             {/*Senior Pastor Section*/}
