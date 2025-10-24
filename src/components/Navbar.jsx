@@ -1,20 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { NavLink, useLocation } from "react-router-dom";
-import { FiLogIn } from "react-icons/fi";
-import logo from '../assets/logo.png';
+import logo from "../assets/logo.png";
 
 const Navbar = () => {
   const location = useLocation();
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  // Track scroll
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20); // change at 20px scroll
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   const navLinks = [
     { name: "Home", path: "/" },
@@ -34,22 +23,8 @@ const Navbar = () => {
   const isAboutActive = location.pathname.startsWith("/about");
 
   return (
-    <header
-  className={`z-50 ${
-    isScrolled
-      ? "sticky top-0 w-full"
-      : "absolute top-6 left-1/2 transform -translate-x-1/2 w-full max-w-6xl"
-  }`}
->
-  <div
-    className={`px-6 py-3 flex items-center justify-between shadow-lg 
-    transition-colors duration-300 ease-in-out
-    ${
-      isScrolled
-        ? "bg-primary-50 rounded-none" 
-        : "bg-primary-50 rounded-full" 
-    }`}
-  >
+    <header className="z-50 fixed top-0 left-0 w-full bg-primary-50 shadow-md">
+      <div className="px-6 py-3 flex items-center justify-between max-w-6xl mx-auto">
         {/* Logo */}
         <div className="flex-shrink-0">
           <img
@@ -59,8 +34,8 @@ const Navbar = () => {
           />
         </div>
 
-        {/* Navigation */}
-        <nav className="hidden md:flex space-x-10 font-medium relative">
+        {/* Centered Navigation */}
+        <nav className="absolute left-1/2 transform -translate-x-1/2 hidden md:flex space-x-10 font-medium">
           {navLinks.map((link, idx) => {
             if (link.name === "About Us") {
               return (
@@ -76,6 +51,7 @@ const Navbar = () => {
                     {link.name}
                   </NavLink>
 
+                  {/* Dropdown */}
                   <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-200">
                     {aboutLinks.map((sublink, subIdx) => (
                       <NavLink
@@ -112,14 +88,6 @@ const Navbar = () => {
             );
           })}
         </nav>
-
-        {/* Login */}
-        <div>
-          <button className="flex items-center gap-2 bg-primary-500 text-white px-5 py-2 rounded-full hover:bg-[#bc6304] transition">
-            Login
-            <FiLogIn size={20} />
-          </button>
-        </div>
       </div>
     </header>
   );

@@ -301,6 +301,16 @@ useEffect(() => {
               </p>
             </div>
 
+            <p className="text-gray-500 font-medium">Monday</p>
+            <div className="border-b pb-4">
+              <h4 className="font-semibold text-gray-800">
+                Connect Group
+              </h4>
+              <p className="text-gray-600 text-sm">
+                10:45am - 1:00pm • Bible Study & Fellowship
+              </p>
+            </div>
+
             <p className="text-gray-500 font-medium">Wednesday</p>
             <div>
               <h4 className="font-semibold text-gray-800">Amateraniro</h4>
